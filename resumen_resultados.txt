@@ -1,0 +1,37 @@
+RESULTADOS PARA EL INFORME
+============================================================
+Dispositivo usado: cuda
+GPT-2 - máximo peso sobre la diagonal: 0.000e+00
+GPT-2 - máscara causal triangular inferior verificada: True
+
+BERT - prueba tired/wide:
+  capa 7, cabeza 11, cruce estricto=True
+  tired: it→animal=0.284269, it→street=0.067086
+  wide:  it→animal=0.011940, it→street=0.590173
+
+Entropía BERT: pendiente=-0.012975 (más concentrada hacia capas profundas)
+Entropía GPT-2: pendiente=-0.031093 (más concentrada hacia capas profundas)
+
+Promedio de atención al primer token por capa (GPT-2, excluyendo q0):
+  capa 01: 0.260025
+  capa 02: 0.453011
+  capa 03: 0.443999
+  capa 04: 0.563808
+  capa 05: 0.595993
+  capa 06: 0.741014
+  capa 07: 0.711150
+  capa 08: 0.813784
+  capa 09: 0.773250
+  capa 10: 0.813801
+  capa 11: 0.848637
+  capa 12: 0.712443
+
+Patrones heurísticos de las 8 cabezas graficadas:
+  BERT L1 H1: último token (score=0.0658)
+  BERT L4 H5: último token (score=0.2193)
+  BERT L8 H9: último token (score=0.2781)
+  BERT L12 H12: puntuación (score=0.4197)
+  GPT-2 L1 H1: primer token (score=0.3732)
+  GPT-2 L4 H5: primer token (score=0.9218)
+  GPT-2 L8 H9: primer token (score=0.5402)
+  GPT-2 L12 H12: primer token (score=0.7144)
